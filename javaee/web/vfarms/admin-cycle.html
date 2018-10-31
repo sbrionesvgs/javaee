@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vertere Farms</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style type="text/css">
+    
+  </style>
+</head>
+
+<body>
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo white-text">Vertere Farms</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="white-text">Join Now</a></li>
+        <li><a href="#" class="white-text">Login</a></li>
+        <li><a class="white-text dropdown-trigger" href="#!" data-target="userdropdown">User<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="https://www.facebook.com/myvertere/" class="tooltipped btn-floating btn-small teal darken-4" data-position="bottom" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small teal darken-4" data-position="bottom" data-tooltip="Instagram"> <i class="fab fa-instagram"></i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Join Now</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- User Dropdown -->
+  <ul id="userdropdown" class="dropdown-content">
+    <li><a href="#">User Home</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Product Request</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Message Center</a></li>
+  </ul>
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="divider"></div></li>
+    <li><a href="#"><i class="material-icons">dashboard</i>Menu</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#">Cycles</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#">Farms</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#">Product Requests</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <!-- Content -->
+  <div class="container">
+
+    <div class="section">
+       <div class="row">
+        <hr>
+        <h5 class="left-align">&nbsp; Maintain Cycles:</h5>
+        <hr>
+      </div>
+      <br> 
+      <div class="row">
+        <div class="col s9 l9">
+          <table class="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Cycle</th>
+                <th>Registration Start</th>
+                <th>Registration End</th>
+                <th>Farming Start Date</th>
+                <th>Farming End Date</th>
+                <th>Status</th>
+                <th>Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>17th</td>
+                <td>2018 Jan 07</td>
+                <td>2018 Feb 28</td>
+                <td>2018 Mar 07</td>
+                <td>2018 Jun 30</td>
+                <td>Completed</td>
+                <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">edit</i></a></td>
+              </tr>
+              <tr>
+                <td>20th</td>
+                <td>2018 Dec 07</td>
+                <td>2019 Jan 28</td>
+                <td>2019 Feb 01</td>
+                <td>2019 Mar 30</td>
+                <td>Registration</td>
+                <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">edit</i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- end of column -->
+      </div>
+    </div> <!-- end of section -->
+
+    <div class="row">
+      <div class="col s9 l9">
+        <button class="btn waves-effect waves-light" type="button" name="action">Create New Cycle
+          <i class="material-icons right">fiber_new</i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 l12">
+        <form class="maintain-cycle-form">
+          <div class="col s12 l8 offset-l1 center z-depth-6 card-panel amber lighten-5">
+            <br><br>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <i class="material-icons prefix">edit</i>
+                <input class="validate" id="cyclenumber" type="number" value="20">
+                <label for="cyclenumber" data-error="wrong" data-success="right">Cycle</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <i class="material-icons prefix">edit</i>
+                <input class="validate datepicker" id="regstartdate" type="text">
+                <label for="regstartdate" data-error="wrong" data-success="right">Reg Start Date</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <i class="material-icons prefix">edit</i>
+                <input class="validate datepicker" id="regenddate" type="text">
+                <label for="regenddate" data-error="wrong" data-success="right">Reg End Date</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <i class="material-icons prefix">edit</i>
+                <input class="validate datepicker" id="farmstartdate" type="text">
+                <label for="farmstartdate" data-error="wrong" data-success="right">Farm Start Date</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <i class="material-icons prefix">edit</i>
+                <input class="validate datepicker" id="farmenddate" type="text">
+                <label for="farmenddate" data-error="wrong" data-success="right">Farm End Date</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8 offset-l1">
+                <select>
+                  <option value="registration" selected>Registration</option>
+                  <option value="farming">Farming</option>
+                  <option value="completed">Completed</option>
+                </select>
+                <label>Status</label>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light right blue darken-1" type="submit" name="action">Save
+              <i class="material-icons right">save</i>
+            </button>
+            <br><br>  
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>   
+  
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Mission</h5>
+          <p class="grey-text text-lighten-4">We partner with our clients by providing high quality and committed IT talents to achieve business goals and affording our people an engaging environment for professional growth while maintaining profitability.</p>
+        </div>
+        <div class="col offset-l3 l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Investagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright light-blue">
+      <div class="container center-align black-text">&copy; 2018 Material Design <a class="brown-text text-lighten-3" href="https://www.vertere-gs.com/"></a></div>
+    </div>
+    
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>
